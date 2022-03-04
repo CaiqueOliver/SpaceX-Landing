@@ -280,17 +280,24 @@
   background-image: url(../../images/humanFlight/05.jpg);
 }
 
-.container01COntent {
+.header #navItem1 {
+  color: #555252;
+}
+.header #navItem1:hover {
+  color: #b9b9b9;
+}
+
+.container01Content {
   height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.container01COntent .titleHuman {
+.container01Content .titleHuman {
   font-size: 120px;
 }
-.container01COntent .subTitleHuman {
+.container01Content .subTitleHuman {
   margin-top: 20px;
   margin-bottom: 50px;
   font-size: 30px;
@@ -309,6 +316,10 @@
   font-weight: 400;
   font-size: 20px;
   width: 800px;
+}
+.earthDesc a {
+  text-decoration: none;
+  color: white;
 }
 
 .containerRightContent {
@@ -331,6 +342,11 @@
   padding-top: 15%;
 }
 
+@media (max-width: 2559px) {
+  .container00 {
+    min-height: 130vh;
+  }
+}
 @media (max-width: 768px) {
   .container01COntent .titleHuman {
     font-size: 90px;

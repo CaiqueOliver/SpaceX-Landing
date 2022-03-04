@@ -15,7 +15,16 @@
     background-image: url(../../images/humanFlight/05.jpg);
   }
 }
-.container01COntent {
+
+.header {
+  #navItem1 {
+    color: $copy-color;
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}
+.container01Content {
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -40,11 +49,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   .textDesc {
     color: $table-item;
     font-weight: 400;
     font-size: 20px;
     width: 800px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
   }
 }
 
@@ -66,6 +81,12 @@
 .containerLeftContent {
   margin-left: 5%;
   padding-top: 15%;
+}
+
+@media (max-width: 2559px) {
+  .container00 {
+    min-height: 130vh;
+  }
 }
 
 @media (max-width: 768px) {
